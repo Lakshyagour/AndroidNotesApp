@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#FFFFFF">
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:id="@+id/addnew"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addnew"
+        android:orientation="vertical"
+        android:id="@+id/ll1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome to Notes"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Have a nice day"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addnew"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/ll2">
+        <Button
+            android:id="@+id/green"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_green"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+        <Button
+            android:id="@+id/red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_red"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+        <Button
+            android:id="@+id/blue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_blue"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+        <Button
+            android:id="@+id/orange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_orange"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+        <Button
+            android:id="@+id/voilet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_violet"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+        <Button
+            android:id="@+id/pink"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:background="@drawable/roundedbutton_pink"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" >
+        </Space>
+
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/addnew"
+    android:scrollbars="vertical"
+    android:id="@+id/recyclerview"/>
+</RelativeLayout>
